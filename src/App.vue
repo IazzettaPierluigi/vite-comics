@@ -3,7 +3,7 @@
 import Header from "./components/Header.vue"
 import ComicsContainer from "./components/ComicsContainer.vue"
 import IconsContainer from "./components/IconsContainer.vue"
-
+import LinkSect from "./components/LinksSect.vue"
 
 
 //poi l'export
@@ -12,6 +12,7 @@ export default {
         Header,
         ComicsContainer,
         IconsContainer,
+        LinkSect,
     }
 }
 </script>
@@ -28,6 +29,10 @@ export default {
 
             <IconsContainer></IconsContainer>
         </div>
+
+        <LinkSect></LinkSect>
+
+
     </main>
 </template>
 
