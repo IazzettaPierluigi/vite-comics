@@ -1,8 +1,16 @@
 <script >
-
-
+//facciamo l'export
+export default {
+    name: "Header",
+};
 </script>
 
-<template></template>
+<template>
+    <h1>sono proprio io, l'header</h1>
+</template>
 
-<style scoped></style>
+<style lang="scss">
+h1 {
+    color: red;
+}
+</style>
