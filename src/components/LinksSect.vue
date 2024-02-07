@@ -87,7 +87,7 @@ export default {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
-                color: white;
+                color: lightgray;
                 width: calc((100% / 3) - (30px));
 
 
