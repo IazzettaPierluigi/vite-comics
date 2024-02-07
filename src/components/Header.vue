@@ -3,6 +3,8 @@
 export default {
     name: "Header",
 };
+
+
 </script>
 
 <template>
@@ -28,7 +30,7 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
     //style di header
     width: 100%;
@@ -36,10 +38,12 @@ header {
     justify-content: space-around;
     align-items: center;
 
+    //style del figure
     figure {
         width: 100px;
         background-color: red;
 
+        //style del img
         img {
             width: 100%;
         }
@@ -52,6 +56,8 @@ header {
             //style della UL
             display: flex;
             flex-direction: row;
+            gap: 10px;
+            text-transform: uppercase;
 
             li {
                 list-style-type: none;

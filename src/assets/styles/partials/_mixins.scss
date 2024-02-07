@@ -1,0 +1,6 @@
+@use "./variables" as *;
+
+@mixin active-link {
+    color: $link-active-color;
+    border-bottom: 5px solid red;
+}
