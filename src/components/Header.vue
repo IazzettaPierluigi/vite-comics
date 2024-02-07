@@ -31,21 +31,30 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/styles/general.scss";
+
 header {
     //style di header
-    width: 100%;
+    width: 60%;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    height: 104px;
+
+
 
     //style del figure
     figure {
-        width: 100px;
-        background-color: red;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
 
         //style del img
         img {
             width: 100%;
+            height: 100%;
         }
     }
 
@@ -61,6 +70,13 @@ header {
 
             li {
                 list-style-type: none;
+                line-height: 100px;
+                font-weight: bold;
+            }
+
+            li:hover {
+                list-style-type: none;
+                border-bottom: 4px solid #0282f9;
             }
         }
     }
