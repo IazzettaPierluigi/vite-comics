@@ -62,6 +62,8 @@ export default {
                 </div>
 
             </div>
+
+            <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
     </div>
 </template>
@@ -69,11 +71,15 @@ export default {
 <style lang="scss" scoped>
 #link-container {
     background-image: url(../assets/img/footer-bg.jpg);
-    padding-block: 40px;
+
 
     #sect-container {
         width: 60%;
         margin: auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        padding-block: 40px;
 
         #cols-container {
 
@@ -109,6 +115,16 @@ export default {
                 }
             }
         }
+
+
+
+        img {
+            width: 600px;
+            position: absolute;
+            right: 0px;
+            top: -30px;
+        }
+
     }
 }
 </style>
