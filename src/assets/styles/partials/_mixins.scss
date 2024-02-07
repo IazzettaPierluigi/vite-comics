@@ -1,5 +1,3 @@
 @use "./variables" as *;
 
-@mixin active-link {
-    color: $link-active-color;
-}
+@mixin active-link {}

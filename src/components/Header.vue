@@ -31,8 +31,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../assets/styles/general.scss";
-
 header {
     //style di header
     width: 60%;
@@ -72,12 +70,14 @@ header {
                 list-style-type: none;
                 line-height: 100px;
                 font-weight: bold;
+
             }
 
             li:hover {
-                list-style-type: none;
+
                 border-bottom: 4px solid #0282f9;
             }
+
         }
     }
 }

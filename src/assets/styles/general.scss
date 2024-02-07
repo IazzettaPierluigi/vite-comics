@@ -7,15 +7,18 @@
     padding: 0;
 }
 
-li:hover {
-    color: $link-active-color;
-}
+
 
 html {
     font-family: sans-serif;
 }
 
-main {
+#black-container {
     width: 100%;
     background-color: black;
+}
+
+#blue-container {
+    width: 100%;
+    background-color: #0282f9;
 }
