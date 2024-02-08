@@ -1,8 +1,14 @@
 <script >
+//import del file Comic.vue
+import Comic from "../components/Comic.vue"
 //facciamo l'export
 export default {
     name: "ComicsContainer",
 
+    //dichiarazione del component importato
+    components: {
+        Comic
+    },
 
 
     //array
@@ -94,7 +100,13 @@ export default {
 <template>
     <div class="container">
 
-        <h2>content goes here</h2>
+        <!-- <h2>content goes here</h2> -->
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+
+        </div>
     </div>
 </template>
 
@@ -103,6 +115,8 @@ export default {
     width: 60%;
     margin: auto;
     padding-block: 40px;
+    display: flex;
+
 
     h2 {
         color: white;
