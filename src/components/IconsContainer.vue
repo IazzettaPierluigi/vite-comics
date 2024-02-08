@@ -7,27 +7,27 @@ export default {
             listItems: [
                 {
                     text: "digital comics",
-                    img: "../assets/img/buy-comics-digital-comics.png"
+                    img: "buy-comics-digital-comics.png"
                 },
 
                 {
                     text: "dc merchandise",
-                    img: "../assets/img/buy-comics-merchandise.png"
+                    img: "buy-comics-merchandise.png"
                 },
 
                 {
                     text: "subscription",
-                    img: "../assets/img/buy-comics-digital-comics.png"
+                    img: "buy-comics-shop-locator.png"
                 },
 
                 {
                     text: "comic shop locator",
-                    img: "../assets/img/buy-comics-digital-comics.png"
+                    img: "buy-comics-subscriptions.png"
                 },
 
                 {
                     text: "dc power visa",
-                    img: "../assets/img/buy-comics-digital-comics.png"
+                    img: "buy-dc-power-visa.svg"
                 },
 
 
@@ -42,9 +42,9 @@ export default {
 <template>
     <div class="container">
         <ul>
-            <li v-for="(element, index) in listItems" :key="index">
+            <li v-for="(element, index) in  listItems " :key="index">
                 <div id="text-ico">
-                    <img :src="element.img" alt="">
+                    <img :src="`../src/assets/img/${element.img}`" alt="">
                     <p>{{ element.text }}</p>
                 </div>
             </li>
@@ -70,10 +70,12 @@ export default {
 
             #text-ico {
                 display: flex;
+                align-items: center;
+                gap: 5px;
 
                 img {
                     width: 50px;
-                    height: 20px;
+                    height: 50px;
                 }
             }
         }

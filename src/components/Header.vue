@@ -39,7 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    height: 104px;
+    height: 100px;
 
 
 
@@ -76,6 +76,7 @@ header {
             li:hover {
 
                 border-bottom: 4px solid #0282f9;
+                line-height: 96px;
             }
 
         }
