@@ -5,6 +5,7 @@ export default {
 
     props: {
         propsImg: String,
+        propsTitle: String,
     }
 };
 
@@ -16,14 +17,19 @@ export default {
         <figure>
             <img :src="propsImg" alt="">
         </figure>
-        <h4></h4>
+        <h4>{{ propsTitle }}</h4>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .col-3 {
-    width: calc(100% /6);
-    height: 200px;
+    width: calc((100% /6) - (30px));
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-block: 30px;
 
     figure {
         width: 100%;
@@ -32,9 +38,13 @@ export default {
         img {
             width: 100%;
             height: 100%;
+
         }
     }
 
-    h4 {}
+    h4 {
+        color: white;
+        font-size: 12px;
+    }
 }
 </style>

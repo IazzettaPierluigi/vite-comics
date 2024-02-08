@@ -101,7 +101,7 @@ export default {
     <div class="container">
 
 
-        <Comic v-for="(element, index) in comics" :key="index" :propsImg="element.thumb" />
+        <Comic v-for="(element, index) in comics" :key="index" :propsImg="element.thumb" :propsTitle="element.series" />
 
     </div>
 </template>
@@ -114,6 +114,7 @@ export default {
     display: flex;
     justify-content: row;
     flex-wrap: wrap;
+    gap: 30px;
 
 }
 </style>
